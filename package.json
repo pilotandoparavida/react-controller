@@ -1,0 +1,21 @@
+{
+  "name": "react-controller",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Giovanna Garcia Basilio",
+    "email": "ggarciabas@gmail.com",
+    "url": "euelecavaloaco.github.io"
+  },
+  "maintainers": [
+    "Giovanna Garcia Basilio <ggarciabas@gmail.com> (euelecavaloaco.github.io)"
+  ],
+  "dependencies": {
+    "react-model": "git+https://github.com/pilotandoparavida/react-model.git#master",
+    "mongoose": "^5.7.3"
+  },
+  "devDependencies": {
+    "react-model-dev": "file:../react-model"
+  }
+}
