@@ -46,9 +46,9 @@ mongoose-legacy-pluralize@1.0.2:
   integrity sha512-Yo/7qQU4/EyIS8YDFSeenIvXxZN+ld7YdV9LqFVQJzTLye8unujAWPZ4NWKfFA+RNjh+wvTWKY9Z3E5XM6ZZiQ==
 
 mongoose@^5.7.3:
-  version "5.7.7"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.7.7.tgz#038b47d10434ea6cc9ec9b45d88bfcf9ab401a1a"
-  integrity sha512-FU59waB4LKBa9KOnqBUcCcMIVRc09TFo1F8nMxrzSiIWATaJpjxxSSH5FBVUDxQfNdJLfg9uFHxaTxhhwjsZOQ==
+  version "5.7.8"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.7.8.tgz#ae86bff72687e8950dd95690a5eb3365ad9d57a0"
+  integrity sha512-GsFXYo7z3ebnIDdnqlDJYQXQFqEGS+yxfdY9G0B7fxpvUJchDpwLGuGJdVd1QbGxu2l0DscCYBO0ntl3G6OACA==
   dependencies:
     bson "~1.1.1"
     kareem "2.3.1"
@@ -89,13 +89,13 @@ ms@2.1.2:
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
 "react-model-dev@file:../react-model":
-  version "0.1.0"
+  version "0.1.2"
   dependencies:
     mongoose "^5.7.3"
 
 "react-model@git+https://github.com/pilotandoparavida/react-model.git#master":
-  version "0.1.0"
-  resolved "git+https://github.com/pilotandoparavida/react-model.git#8ad00a572e1c050dc1344d6c342e9586e5809688"
+  version "0.1.2"
+  resolved "git+https://github.com/pilotandoparavida/react-model.git#3010062666ef03791e4eb19d75dcbb5bcffa15c4"
   dependencies:
     mongoose "^5.7.3"
 
