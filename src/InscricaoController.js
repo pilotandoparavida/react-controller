@@ -1,7 +1,7 @@
 // index, show, store, update, destroy
-let path_model = 'model_ppv'
+let path_model = 'react-model'
 if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-    path_model = 'model_ppv_dev';
+    path_model = 'reac-model-dev';
 }
 const {Turma, Aluno, AlunoTurma} = require(path_model);
 
