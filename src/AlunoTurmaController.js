@@ -1,9 +1,9 @@
 // index, show, store, update, destroy
 const InscricaoController = require('./InscricaoController');
 const TransferenciaController = require('./TransferenciaController');
-let path_model = 'reac-model'
+let path_model = 'model_ppv'
 if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-    path_model = 'reac-model-dev';
+    path_model = 'model_ppv_dev';
 }
 const {AlunoTurma, Turma, Aluno} = require(path_model);
 

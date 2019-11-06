@@ -6,6 +6,7 @@ const NegarInscricaoController = require('./src/NegarInscricaoController');
 const TurmaController = require('./src/TurmaController');
 const MotoController = require('./src/MotoController');
 const LoginController = require('./src/LoginController');
+const AdministradorController = require('./src/AdministradorController');
 
 module.exports.AceitarInscricaoController = AceitarInscricaoController;
 module.exports.AlunoController = AlunoController;
@@ -15,3 +16,4 @@ module.exports.NegarInscricaoController = NegarInscricaoController;
 module.exports.TurmaController = TurmaController;
 module.exports.MotoController = MotoController;
 module.exports.LoginController = LoginController;
+module.exports.AdministradorController = AdministradorController;

@@ -1,6 +1,6 @@
 {
-  "name": "react-controller",
-  "version": "0.1.0",
+  "name": "controller_ppv",
+  "version": "0.1.4",
   "main": "index.js",
   "license": "MIT",
   "author": {
@@ -12,10 +12,10 @@
     "Giovanna Garcia Basilio <ggarciabas@gmail.com> (euelecavaloaco.github.io)"
   ],
   "dependencies": {
-    "react-model": "git+https://github.com/pilotandoparavida/react-model.git#master",
+    "model_ppv": "git+https://ggb-heroku:9odvTyy3jpG33jje@github.com/ggarciabas/model_ppv.git#master",
     "mongoose": "^5.7.3"
   },
   "devDependencies": {
-    "react-model-dev": "file:../react-model"
+    "model_ppv_dev": "file:../model_ppv"
   }
 }

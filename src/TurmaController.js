@@ -1,8 +1,8 @@
 // index, show, store, update, destroy
 const AlunoTurmaController = require('./AlunoTurmaController');
-let path_model = 'reac-model'
+let path_model = 'model_ppv'
 if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-    path_model = 'reac-model-dev';
+    path_model = 'model_ppv_dev';
 }
 console.log(path_model);
 const { Turma } = require(path_model);

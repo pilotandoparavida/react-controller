@@ -1,7 +1,7 @@
 // index, show, store, update, destroy
-let path_model = 'reac-model'
+let path_model = 'model_ppv'
 if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-    path_model = 'reac-model-dev';
+    path_model = 'model_ppv_dev';
 }
 const {Aluno} = require(path_model);
 
