@@ -1,6 +1,6 @@
 {
   "name": "controller_ppv",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "main": "index.js",
   "license": "MIT",
   "author": {
@@ -13,6 +13,9 @@
   ],
   "dependencies": {
     "mongoose": "^5.7.3",
-    "react-model": "git+https://github.com/pilotandoparavida/react-model.git#master"
+    "react-model": "git+https://github.com/pilotandoparavida/react-model.git#production"
+  },
+  "devDependencies": {
+    "react-model-dev": "file:../react-model"
   }
 }
