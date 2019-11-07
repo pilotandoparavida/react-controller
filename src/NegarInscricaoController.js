@@ -3,7 +3,7 @@ const AlunoTurmaController = require('./AlunoTurmaController');
 const TransferenciaController = require('./TransferenciaController');
 let path_model = 'react-model'
 if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-    path_model = 'reac-model-dev';
+    path_model = 'react-model-dev';
 }
 const {AlunoTurma, Turma, Aluno, Moto} = require(path_model);
 
