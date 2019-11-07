@@ -33,7 +33,6 @@ module.exports = {
             alunoturma.estado = "CONFIRMADO";
             alunoturma.confirmar = false;
             await alunoturma.save();
-            await alunoturma.populate('turma').execPopulate();
 
             return res.status(200).json({msg:"Sucesso", dados:alunoturma});
         } catch (e) {

@@ -87,7 +87,7 @@ module.exports = {
                                     sort: {
                                         createdAt: -1
                                     }
-                                }).populate('turma');
+                                });
 
                 aluno.turma = alunoturma_c.turma;
                 await aluno.save();

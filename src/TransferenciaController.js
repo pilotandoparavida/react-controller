@@ -71,8 +71,6 @@ module.exports = {
         await aluno.save();
 
         const alunoTurma =  await AlunoTurma.create({ aluno: aluno_id, turma: turma._id, estado: "INSCRITO", confirmar });
-
-        await alunoTurma.populate('turma').execPopulate();  
         
         return alunoTurma;
     }
