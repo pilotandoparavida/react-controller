@@ -6,6 +6,7 @@ if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
 const { Moto } = require(path_model);
 
 module.exports = {
+    
     async index(req, res) {
         try {
             const motos = await Moto.find({}); //,['_id']);
