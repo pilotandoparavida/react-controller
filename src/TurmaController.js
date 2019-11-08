@@ -5,14 +5,18 @@ if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
     path_model = 'react-model-dev';
 }
 console.log(path_model);
-const { Turma } = require(path_model);
+const { Turma, Administrador } = require(path_model);
 
 module.exports = {
     async store(req, res) {
         try {
-            const { data, endereco, descricao, confirmar } = req.body;
-
-            const turma = await Turma.create({ data, endereco, descricao, confirmar });
+            const { data, datainscricao, endereco, descricao, confirmar, adm } = req.body;
+            let turma;
+            const administrador = await Administrador.findById(adm);
+            if (!administrador) {
+                return res.status(400).send({ msg: "Administrador não cadastrado." });
+            }
+            turma = await Turma.create({ data, datainscricao, endereco, descricao, confirmar, adm });
 
             if ("vagas" in req.body) {
                 turma.vagas = req.body["vagas"];

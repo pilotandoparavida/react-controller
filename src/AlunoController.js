@@ -25,8 +25,14 @@ module.exports = {
             if (!aluno) {
                 const { nome, email, nascimento, cidade, celular, rg, cpf, ufcnh, anocnh, sexo, marca, modelo, placa } = req.body;
 
-                aluno = await Aluno.create({ nome, email, cpf, nascimento, cidade, celular, rg, cnh, ufcnh, anocnh, sexo, estado: 'ATIVO', dataestado: Date.now() });
-                await Moto.create({ aluno: aluno._id, marca, modelo, placa });
+                if ("adm" in req.body) {
+                    const { adm } = req.body;
+                    aluno = await Aluno.create({ nome, email, cpf, nascimento, cidade, celular, rg, cnh, ufcnh, anocnh, sexo, estado: 'ATIVO', dataestado: Date.now(), adm });
+                    await Moto.create({ aluno: aluno._id, marca, modelo, placa, adm });
+                } else {
+                    aluno = await Aluno.create({ nome, email, cpf, nascimento, cidade, celular, rg, cnh, ufcnh, anocnh, sexo, estado: 'ATIVO', dataestado: Date.now() });
+                    await Moto.create({ aluno: aluno._id, marca, modelo, placa });
+                }
 
                 await AlunoTurmaController.store(aluno._id);
 

@@ -17,7 +17,7 @@ module.exports = {
             }
 
             if (!aluno.turma) {
-                const turmas = await Turma.find({ data: { $gte: aluno.createdAt } }).sort({ data: 1 });
+                const turmas = await Turma.find({ datainscricao: { $gte: aluno.createdAt } }).sort({ datainscricao: 1 });
                 let turma = turmas[0];
                 for (var i = 0, len = turmas.length; i < len; ++i) {
                     if (turmas[i].vagas > turmas[i].totalinscritos) {
@@ -80,8 +80,10 @@ module.exports = {
                 return null;
             }
             // t_atual.insc já foi subtraido na chamada anterior
+
             const turmas = await Turma.find({
-                data: { $gt: t_atual.data }
+                data: { $gt: t_atual.data },
+                datainscricao: { $gte: new Date()},
             },
                 [], {
                 sort: {
