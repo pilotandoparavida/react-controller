@@ -12,12 +12,11 @@ module.exports = {
         try {
             const { data, datainscricao, endereco, descricao, confirmar, adm } = req.body;
             let turma;
-            const admId = req.body["adm"];
-            const adm = await Administrador.findById(admId);
-            if (!adm) {
+            const administrador = await Administrador.findById(adm);
+            if (!administrador) {
                 return res.status(400).send({ msg: "Administrador não cadastrado." });
             }
-            turma = await Turma.create({ data, datainscricao, endereco, descricao, confirmar, adm: admId });
+            turma = await Turma.create({ data, datainscricao, endereco, descricao, confirmar, adm });
 
             if ("vagas" in req.body) {
                 turma.vagas = req.body["vagas"];
