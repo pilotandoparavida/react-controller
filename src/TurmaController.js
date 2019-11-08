@@ -2,7 +2,7 @@
 const AlunoTurmaController = require('./AlunoTurmaController');
 let path_model = 'react-model'
 if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-    path_model = 'reac-model-dev';
+    path_model = 'react-model-dev';
 }
 console.log(path_model);
 const { Turma } = require(path_model);
