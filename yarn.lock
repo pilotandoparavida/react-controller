@@ -8,9 +8,9 @@ bluebird@3.5.1:
   integrity sha512-MKiLiV+I1AA596t9w1sQJ8jkiSr5+ZKi0WKrYGUn6d1Fx+Ij4tIj+m2WMQSGczs5jZVxV339chE8iwk6F64wjA==
 
 bson@^1.1.1, bson@~1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/bson/-/bson-1.1.1.tgz#4330f5e99104c4e751e7351859e2d408279f2f13"
-  integrity sha512-jCGVYLoYMHDkOsbwJZBCqwMHyH4c+wzgI9hG7Z6SZJRXWr+x58pdIbm2i9a/jFGCkRJqRUr8eoI7lDWa0hTkxg==
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/bson/-/bson-1.1.2.tgz#584e72d809f248678a1aa466c0aedb6df7c25ae0"
+  integrity sha512-oSKfIoJlJ2AnSD8et9z6CTAv8lCXtEGOpe8j6E3PNNKxewADHGA5nKS3Br/DkoNgSeQUu9tKnpLKGSbYBJ3tow==
 
 debug@3.1.0:
   version "3.1.0"
@@ -88,14 +88,9 @@ ms@2.1.2:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-"react-model-dev@file:../react-model":
-  version "0.2.0"
-  dependencies:
-    mongoose "^5.7.3"
-
 "react-model@git+https://github.com/pilotandoparavida/react-model.git#production":
   version "0.2.0"
-  resolved "git+https://github.com/pilotandoparavida/react-model.git#c0bd7982127a4d9f66fb6e1deee3e94c69007fd3"
+  resolved "git+https://github.com/pilotandoparavida/react-model.git#a150e46f72e4d20882adaa62f0e9b61b46364639"
   dependencies:
     mongoose "^5.7.3"
 

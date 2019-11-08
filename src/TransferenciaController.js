@@ -1,7 +1,7 @@
 // index, show, store, update, destroy
 let path_model = 'react-model'
 if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-    path_model = 'reac-model-dev';
+    path_model = 'react-model-dev';
 }
 const {Turma, Aluno, AlunoTurma} = require(path_model);
 
@@ -71,8 +71,6 @@ module.exports = {
         await aluno.save();
 
         const alunoTurma =  await AlunoTurma.create({ aluno: aluno_id, turma: turma._id, estado: "INSCRITO", confirmar });
-
-        await alunoTurma.populate('turma').execPopulate();  
         
         return alunoTurma;
     }
