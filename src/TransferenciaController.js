@@ -44,7 +44,8 @@ module.exports = {
             }
             // t_atual.insc já foi subtraido na chamada anterior
             const turmas = await Turma.find({
-                data: { $gt: t_atual.data }
+                data: { $gt: t_atual.data },
+                datainscricao: { $gt: new Date()},
             },
                 [], {
                 sort: {
