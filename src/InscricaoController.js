@@ -83,7 +83,7 @@ module.exports = {
 
             const turmas = await Turma.find({
                 data: { $gt: t_atual.data },
-                datainscricao: { $gt: new Date()},
+                datainscricao: { $gte: new Date()},
             },
                 [], {
                 sort: {
