@@ -10,13 +10,13 @@ const { Turma, Administrador } = require(path_model);
 module.exports = {
     async store(req, res) {
         try {
-            const { data, datainscricao, endereco, descricao, confirmar, adm } = req.body;
+            const { data, datainscricao, endereco, descricao, adm } = req.body;
             let turma;
             const administrador = await Administrador.findById(adm);
             if (!administrador) {
                 return res.status(400).send({ msg: "Administrador não cadastrado." });
             }
-            turma = await Turma.create({ data, datainscricao, endereco, descricao, confirmar, adm });
+            turma = await Turma.create({ data, datainscricao, endereco, descricao, adm });
 
             if ("vagas" in req.body) {
                 turma.vagas = req.body["vagas"];
@@ -32,6 +32,10 @@ module.exports = {
 
             if ("googlemaps" in req.body) {
                 turma.googlemaps = req.body["googlemaps"];
+            }
+
+            if ("confirmar" in req.body) {
+                turma.confirmar = req.body["confirmar"];
             }
 
             await turma.save();
